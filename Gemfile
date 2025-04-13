@@ -45,3 +45,7 @@ group :development, :test do
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
 end
+
+#Use GaphQL
+gem "graphql"
+gem "graphiql-rails", group: :development  # For GraphiQL interface
