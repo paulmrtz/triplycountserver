@@ -18,6 +18,11 @@ module Types
       ids.map { |id| context.schema.object_from_id(id, context) }
     end
 
+    field :expenses, [Types::ExpenseType], null: false, description: "Returns a list of expenses"
+    def expenses
+      Expense.all
+    end
+
     # Add root-level fields here.
     # They will be entry points for queries on your schema.
 
